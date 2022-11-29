@@ -1,0 +1,9 @@
+<ul>
+  <% @spacecrafts.each do |spacecraft| %>
+    <li>Spaceship: <%= spacecraft.name %></li>
+    <li>Speed: <%= spacecraft.velocity %> km</li>
+    <li>Capacity: <%= spacecraft.passenger_capacity %> passengers</li>
+    <li>Rental cost: <%= spacecraft.price %> $</li>
+    <br>
+  <% end %>
+</ul>
