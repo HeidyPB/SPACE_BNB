@@ -13,16 +13,46 @@ User.destroy_all
 
 puts "Creating spacecrafts.."
 
-10.times do
-  spacecraft = Spacecraft.new(
-    name: Faker::Vehicle.make_and_model,
+hansolo = User.create!(
+  username: 'Han Solo',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: 'Milenuim',
     velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
     passenger_capacity: rand(5..20),
-    price: rand(1..5),
-    user:
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: hansolo
   )
-  spacecraft.save!
   puts "Spacecraft #{spacecraft.id} created"
-end
+
+luke = User.create!(
+  username: 'Luke Skywalker',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: 'X-wing',
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: luke
+  )
+  puts "Spacecraft #{spacecraft.id} created"
+
+obi = User.create!(
+  username: 'Obi-wan Kenobi',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: 'Destroyer',
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: obi
+  )
+  puts "Spacecraft #{spacecraft.id} created"
 
 puts "Done!"
