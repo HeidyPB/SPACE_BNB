@@ -15,6 +15,10 @@ class ReservationsController < ApplicationController
     end
   end
 
+  def dashboard
+
+  end
+
   private
   def set_spacecraft
     @spacecraft = Spacecraft.find(params[:spacecraft_id])
