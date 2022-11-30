@@ -55,4 +55,102 @@ obi = User.create!(
   )
   puts "Spacecraft #{spacecraft.id} created"
 
+pike = User.create!(
+  username: 'pike-treek',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: 'USS Enterprise',
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: pike
+  )
+  puts "Spacecraft #{spacecraft.id} created"
+
+neo = User.create!(
+  username: 'Neo-matrix',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: 'Nebuchadnezzar',
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: neo
+  )
+  puts "Spacecraft #{spacecraft.id} created"
+
+man = User.create!(
+  username: 'man-explored',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: 'Apolo',
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: man
+  )
+  puts "Spacecraft #{spacecraft.id} created"
+
+alien = User.create!(
+  username: 'man-explored',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: 'UFO',
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: alien
+  )
+  puts "Spacecraft #{spacecraft.id} created"
+
+cooper = User.create!(
+  username: 'cooper-station',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: 'Endurance',
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: cooper
+  )
+  puts "Spacecraft #{spacecraft.id} created"
+
+odyssey = User.create!(
+  username: 'odyssey-space',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: 'Discovery',
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: odyssey
+  )
+  puts "Spacecraft #{spacecraft.id} created"
+
+noah = User.create!(
+  username: 'odyssey-space',
+  email: Faker::Internet.email,
+  password: '123456910adfa!'
+)
+  spacecraft = Spacecraft.create!(
+    name: "noah's ark",
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: noah
+  )
+  puts "Spacecraft #{spacecraft.id} created"
+
 puts "Done!"
