@@ -13,8 +13,8 @@ class SpacecraftsController < ApplicationController
 
   def create
     @spacecraft = Spacecraft.new(spacecraft_params)
+    @spacecraft.user = current_user
     if @spacecraft.save
-      # raise
       redirect_to spacecraft_path(@spacecraft), notice: 'spacecrafts was successfully created.'
     else
       render :new, status: :unprocessable_entity
