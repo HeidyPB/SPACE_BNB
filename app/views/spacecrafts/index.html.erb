@@ -1,0 +1,8 @@
+<ul>
+  <% @spacecrafts.each do |spacecraft| %>
+    <li>Spaceship: <%= spacecraft.name %></li>
+    <li>Rental cost: <%= spacecraft.price %> $</li>
+    <%= link_to "Show this spacecraft", spacecraft %>
+    <br><br>
+  <% end %>
+</ul>
