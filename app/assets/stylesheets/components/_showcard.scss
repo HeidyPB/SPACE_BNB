@@ -1,4 +1,4 @@
-.card-trip {
+.card-space {
   margin: 0px 100px;
   overflow: hidden;
   background: white;
@@ -11,20 +11,20 @@
   object-fit: cover;
 }
 
-.card-trip h2 {
+.card-space h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
-.card-trip p {
+.card-space p {
   font-size: 12px;
   opacity: .7;
   margin: 0;
 }
 
 
-.card-trip .card-trip-infos {
+.card-space .card-space-infos {
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@
   position: relative;
 }
 
-.card-trip-infos .card-space-user {
+.card-space-infos .card-space-user {
   position: absolute;
   right: 16px;
   top: -20px;
