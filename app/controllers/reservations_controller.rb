@@ -8,8 +8,9 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
     @reservation.user = current_user
+    @reservation.spacecraft = Spacecraft.find(params[:spacecraft_id])
     if @reservation.save
-      redirect_to @spacecraft, notice: "Spacecraft was successfully created."
+      redirect_to spacecraft_path(@spacecraft), notice: "Spacecraft was successfully created."
     else
       render :new, status: :unprocessable_entity
     end
@@ -20,6 +21,7 @@ class ReservationsController < ApplicationController
   end
 
   private
+
   def set_spacecraft
     @spacecraft = Spacecraft.find(params[:spacecraft_id])
   end
