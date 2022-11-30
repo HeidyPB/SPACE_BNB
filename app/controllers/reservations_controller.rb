@@ -8,7 +8,6 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
     @reservation.user = current_user
-
     if @reservation.save
       redirect_to @spacecraft, notice: "Spacecraft was successfully created."
     else
