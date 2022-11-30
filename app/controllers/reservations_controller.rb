@@ -1,6 +1,5 @@
 class ReservationsController < ApplicationController
-  # before_action :set_reservation, only: [ :show ]
-  # before_action :set_spacecraft, only: [ :new, :create ]
+  before_action :set_spacecraft, only: [ :new, :create ]
 
   def new
     @reservation = Reservation.new
@@ -17,17 +16,11 @@ class ReservationsController < ApplicationController
   end
 
   private
-
-  # def set_reservation
-   # @reservation = Reservation.find(params[:id])
-  # end
-
   def set_spacecraft
     @spacecraft = Spacecraft.find(params[:spacecraft_id])
   end
 
   def reservation_params
-    params.require(:reservation).permit(:comment)
-    # we will need the parametre :reservation_status after.
+    params.require(:reservation).permit(:reservation_status, :comment)
   end
 end

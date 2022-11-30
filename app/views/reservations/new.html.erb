@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 <h1>New Reservation</h1>
 
 <%= simple_form_for(@reservation) do |f| %>
+=======
+<!-- http://localhost:3000/spacecrafts/:id/reservations/new -->
+<h1>New Reservation</h1>
+
+<%= simple_form_for([@spacecraft, @reservation]) do |f| %>
+>>>>>>> master
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
@@ -17,5 +24,9 @@
 <br>
 
 <div>
+<<<<<<< HEAD
   <%= link_to "Back to spacecraft", spacecraft_path %>
+=======
+  <%= link_to "Back to spacecraft", spacecraft_path(@spacecraft) %>
+>>>>>>> master
 </div>
