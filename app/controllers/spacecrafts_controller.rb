@@ -1,10 +1,10 @@
 class SpacecraftsController < ApplicationController
+  before_action :set_spacecraft, only: %i[show edit update destroy]
   def index
     @spacecrafts = Spacecraft.all
   end
 
   def show
-    @spacecraft = Spacecraft.find(params[:id])
   end
 
   def new
@@ -21,7 +21,27 @@ class SpacecraftsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @spacecraft.update(spacecraft_params)
+      redirect_to spacecraft_path(@spacecraft)
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @spacecraft.destroy
+    redirect_to spacecrafts_path(@spacecraft)
+  end
+
   private
+
+  def set_spacecraft
+    @spacecraft = Spacecraft.find(params[:id])
+  end
 
   def spacecraft_params
     params.require(:spacecraft).permit(:name, :velocity, :passenger_capacity, :price, :photo)
