@@ -1,3 +1,10 @@
+<%= render "spacecrafts", spacecrafts: @spacecrafts %>
+<%= link_to "Book now", new_spacecraft_reservation_path(@spacecraft), class: "btn btn-flat" %>
+
+<%= link_to 'Return to Spaceships', spacecrafts_path %>
+
+<%= link_to "Delete", spacecraft_path(@spacecraft), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+
 <div class="card-space" id="spaceship">
   <img src="https://thenewswheel.com/wp-content/themes/patterns/timthumb.php?src=https://thenewswheel.com/wp-content/uploads/2018/05/Millennium-Falcon.jpg&q=90&w=660&zc=1" />
   <div class="card-space-infos">
