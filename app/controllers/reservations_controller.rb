@@ -24,6 +24,11 @@ class ReservationsController < ApplicationController
     # raise
   end
 
+  def update
+    @reservation = Reservation.find(params[:id])
+    @reservation.update(status_params)
+  end
+
   private
 
   def set_spacecraft
@@ -31,6 +36,10 @@ class ReservationsController < ApplicationController
   end
 
   def reservation_params
-    params.require(:reservation).permit(:reservation_status, :comment)
+    params.require(:reservation).permit(:comment)
+  end
+
+  def status_params
+    params.require(:reservation).permit(:reservation_status)
   end
 end
