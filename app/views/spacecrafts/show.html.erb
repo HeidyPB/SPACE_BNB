@@ -2,3 +2,5 @@
 <%= link_to "Book now", new_spacecraft_reservation_path(@spacecraft), class: "btn btn-flat" %>
 
 <%= link_to 'Return to Spaceships', spacecrafts_path %>
+
+<%= link_to "Delete", spacecraft_path(@spacecraft), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
