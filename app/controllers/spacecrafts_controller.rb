@@ -1,5 +1,5 @@
 class SpacecraftsController < ApplicationController
-  before_action :set_spacecraft, only: %i[show destroy]
+  before_action :set_spacecraft, only: %i[show edit update destroy]
   def index
     @spacecrafts = Spacecraft.all
   end
@@ -18,6 +18,17 @@ class SpacecraftsController < ApplicationController
       redirect_to spacecraft_path(@spacecraft), notice: 'spacecrafts was successfully created.'
     else
       render :new, status: :unprocessable_entity
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    if @spacecraft.update(spacecraft_params)
+      redirect_to spacecraft_path(@spacecraft)
+    else
+      render :edit
     end
   end
 
