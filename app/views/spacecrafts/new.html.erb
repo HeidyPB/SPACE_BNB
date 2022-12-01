@@ -1,2 +1,12 @@
+<h1>New spacecraft</h1>
+<%= simple_form_for(@spacecraft) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :velocity %>
+  <%= f.input :passenger_capacity %>
+  <%= f.input :price %>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit %>
+<% end %>
+
 <h1>Create a post</h1>
 <%= render "form", spacecraft: @spacecraft %>

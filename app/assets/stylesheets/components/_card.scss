@@ -2,6 +2,7 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 0
 }
 
 .card-trip > img {
@@ -36,4 +37,9 @@
   right: 16px;
   top: -10px;
   width: 120px;
+}
+
+.col {
+  border-spacing: 5px 1rem;
+  margin: 25px;
 }
