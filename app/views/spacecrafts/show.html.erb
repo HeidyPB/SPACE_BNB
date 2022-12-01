@@ -1,11 +1,12 @@
 <div class="card-space" id="spaceship">
-  <img src="https://thenewswheel.com/wp-content/themes/patterns/timthumb.php?src=https://thenewswheel.com/wp-content/uploads/2018/05/Millennium-Falcon.jpg&q=90&w=660&zc=1" />
+ <%= cl_image_tag @spacecraft.photo.key, height: 300, width: 400, crop: :fill %>
+
   <div class="card-space-infos">
     <div>
       <%= render "spacecrafts", spacecrafts: @spacecrafts %>
       <%= link_to "Book now", new_spacecraft_reservation_path(@spacecraft), class: "btn btn-flat" %>
        <%= link_to 'Return to Spaceships', spacecrafts_path %>
     </div>
-    <img src="https://www.cnet.com/a/img/resize/e89011c5ef21c272f62aee8dae4cca097f448687/hub/2015/07/07/4eb66f23-8702-46ac-b15f-c61352b41ccd/hansolo2.jpg?auto=webp&fit=crop&height=675&width=1200" class="card-space-user alien-bordered" />
-  </div>
+      <img src="https://www.cnet.com/a/img/resize/e89011c5ef21c272f62aee8dae4cca097f448687/hub/2015/07/07/4eb66f23-8702-46ac-b15f-c61352b41ccd/hansolo2.jpg?auto=webp&fit=crop&height=675&width=1200" class="card-space-user alien-bordered" />
+    </div>
 </div>
