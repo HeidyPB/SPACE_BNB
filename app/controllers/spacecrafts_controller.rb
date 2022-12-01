@@ -1,7 +1,7 @@
 class SpacecraftsController < ApplicationController
   before_action :set_spacecraft, only: %i[show edit update destroy]
   def index
-    @spacecrafts = Spacecraft.all
+    @spacecrafts = policy_scope(Spacecraft)
   end
 
   def show
@@ -9,11 +9,13 @@ class SpacecraftsController < ApplicationController
 
   def new
     @spacecraft = Spacecraft.new
+    authorize @spacecraft
   end
 
   def create
     @spacecraft = Spacecraft.new(spacecraft_params)
     @spacecraft.user = current_user
+    authorize @spacecraft
     if @spacecraft.save
       redirect_to spacecraft_path(@spacecraft), notice: 'spacecrafts was successfully created.'
     else
@@ -41,6 +43,7 @@ class SpacecraftsController < ApplicationController
 
   def set_spacecraft
     @spacecraft = Spacecraft.find(params[:id])
+    authorize @spacecraft
   end
 
   def spacecraft_params
