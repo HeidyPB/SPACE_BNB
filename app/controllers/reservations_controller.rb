@@ -17,7 +17,11 @@ class ReservationsController < ApplicationController
   end
 
   def dashboard
-
+    @user = current_user
+    @user_reservations = @user.reservations
+    @user_spacecrafts = @user.spacecrafts
+    @reservations = Reservation.all
+    # raise
   end
 
   private

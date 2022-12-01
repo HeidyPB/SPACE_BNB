@@ -1,1 +1,21 @@
-<h1>Dashboard</h1>
+<h1><strong>Dashboard</strong></h1>
+
+<h2>My Reservations</h2>
+<% @user_reservations.each do |reservation| %>
+  <p>Reference No: <%= reservation.id %>000BNB </p>
+  <p>Comment: <%= reservation.comment %></p>
+  <p>Status: <%= reservation.reservation_status %></p>
+  <p>Spaceship: <%= reservation.spacecraft.name %> </p>
+  <br>
+<% end %>
+
+<h2>My Posts</h2>
+<% @reservations.each do |reservation| %>
+  <% if reservation.user_id != @user.id %>
+    <p>Reservation id: <%= reservation.id %></p>
+    <p>Reservation status: <%= reservation.spacecraft.name %></p>
+    <p>Reservation status: <%= reservation.reservation_status %></p>
+    <p>Reservation id: <%= reservation.comment %></p>
+    <br>
+  <% end %>
+<% end %>
