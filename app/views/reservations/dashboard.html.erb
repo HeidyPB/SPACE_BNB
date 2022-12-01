@@ -13,9 +13,20 @@
 <% @reservations.each do |reservation| %>
   <% if reservation.user_id != @user.id %>
     <p>Reservation id: <%= reservation.id %></p>
-    <p>Reservation status: <%= reservation.spacecraft.name %></p>
-    <p>Reservation status: <%= reservation.reservation_status %></p>
+    <p>Spacecraft: <%= reservation.spacecraft.name %></p>
     <p>Reservation id: <%= reservation.comment %></p>
+    <p>Reservation status: <%= reservation.reservation_status %></p>
+
+    <%= simple_form_for(reservation) do |f| %>
+        <%= f.hidden_field :reservation_status, value: 'accepted' %>
+        <%= f.submit :Accept %>
+    <% end %> <!-- form Accept -->
+
+    <%= simple_form_for(reservation) do |f| %>
+      <%= f.hidden_field :reservation_status, value: 'rejected' %>
+      <%= f.submit :Reject %>
+    <% end %> <!-- form Accept -->
+
     <br>
-  <% end %>
-<% end %>
+  <% end %> <!-- if -->
+<% end %> <!-- each -->
