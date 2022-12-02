@@ -14,84 +14,69 @@ User.destroy_all
 
 puts "Creating spacecrafts.."
 
+all_users = [
 
-hansolo = User.create!(
-  username: 'Han Solo',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
+  hansolo = User.create!(
+    username: 'Han Solo',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  ),
 
+  luke = User.create!(
+    username: 'Luke Skywalker',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  ),
 
+  obi = User.create!(
+    username: 'Obi-wan Kenobi',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  ),
 
-luke = User.create!(
-  username: 'Luke Skywalker',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
+  pike = User.create!(
+    username: 'pike-treek',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  ),
 
+  neo = User.create!(
+    username: 'Neo-matrix',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  ),
 
+  man = User.create!(
+    username: 'man-explored',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  ),
 
-obi = User.create!(
-  username: 'Obi-wan Kenobi',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
+  alien = User.create!(
+    username: 'man-explored',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  ),
 
+  cooper = User.create!(
+    username: 'cooper-station',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  ),
 
+  odyssey = User.create!(
+    username: 'odyssey-space',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  ),
 
-pike = User.create!(
-  username: 'pike-treek',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
+  noah = User.create!(
+    username: 'odyssey-space',
+    email: Faker::Internet.email,
+    password: '123456910adfa!'
+  )
+]
 
-
-
-neo = User.create!(
-  username: 'Neo-matrix',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
-
-
-
-man = User.create!(
-  username: 'man-explored',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
-
-
-
-alien = User.create!(
-  username: 'man-explored',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
-
-
-
-cooper = User.create!(
-  username: 'cooper-station',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
-
-
-
-odyssey = User.create!(
-  username: 'odyssey-space',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
-
-
-
-noah = User.create!(
-  username: 'odyssey-space',
-  email: Faker::Internet.email,
-  password: '123456910adfa!'
-)
 
   # Ejemplo empiesas apartir de aqui
 
@@ -163,41 +148,72 @@ noah = User.create!(
     price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
     user: odyssey
   ),
-    Spacecraft.create!(
-      name: "Noah's Ark",
-      velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
-      passenger_capacity: rand(5..20),
-      price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
-      user: noah
-    )
+  Spacecraft.create!(
+    name: "Noah's Ark",
+    velocity: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    passenger_capacity: rand(5..20),
+    price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+    user: noah
+  )
 ]
 
-spacecraft_0 = URI.open("https://res.cloudinary.com/dwvrcwjwc/image/upload/v1669941162/Miscellaneous/Millennium-Falcon_vvvifb.jpg")
+user_0 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1670000000/spacebnb/avatars/avatarmilenium_ribvbq.jpg")
+all_users[0].avatar.attach(io: user_0, filename: "nes.png", content_type: "image/png")
+
+user_1 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999999/spacebnb/avatars/avatarxwing_jsi94k.jpg")
+all_users[1].avatar.attach(io: user_1, filename: "nes.png", content_type: "image/png")
+
+user_2 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999999/spacebnb/avatars/avatardestroyer_z9kc5m.jpg")
+all_users[2].avatar.attach(io: user_2, filename: "nes.png", content_type: "image/png")
+
+user_3 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1670000001/spacebnb/avatars/avatarenterprice_okdrqt.jpg")
+all_users[3].avatar.attach(io: user_3, filename: "nes.png", content_type: "image/png")
+
+user_4 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999999/spacebnb/avatars/avatarnebuchadnezzar_hdqyu4.jpg")
+all_users[4].avatar.attach(io: user_4, filename: "nes.png", content_type: "image/png")
+
+user_5 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1670000000/spacebnb/avatars/avatarapolo_fvxx7p.jpg")
+all_users[5].avatar.attach(io: user_5, filename: "nes.png", content_type: "image/png")
+
+user_6 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999999/spacebnb/avatars/avatarufo_gnc6qv.jpg")
+all_users[6].avatar.attach(io: user_6, filename: "nes.png", content_type: "image/png")
+
+user_7 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999999/spacebnb/avatars/avatarendurance_nroklz.jpg")
+all_users[7].avatar.attach(io: user_7, filename: "nes.png", content_type: "image/png")
+
+user_8 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999999/spacebnb/avatars/avatardiscovery_uyig4b.jpg")
+all_users[8].avatar.attach(io: user_8, filename: "nes.png", content_type: "image/png")
+
+user_9 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1670000000/spacebnb/avatars/avatarnoahsark_sgk0y4.jpg")
+all_users[9].avatar.attach(io: user_9, filename: "nes.png", content_type: "image/png")
+
+
+spacecraft_0 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999733/spacebnb/spaceships/milenium_namgjn.jpg")
 all_spacecrafts[0].photo.attach(io: spacecraft_0, filename: "nes.png", content_type: "image/png")
 
-spacecraft_1 = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+spacecraft_1 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999978/spacebnb/spaceships/x-wing_mfocnh.jpg")
 all_spacecrafts[1].photo.attach(io: spacecraft_1, filename: "nes.png", content_type: "image/png")
 
-spacecraft_2 = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+spacecraft_2 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999978/spacebnb/spaceships/destroyer_j8wozw.jpg")
 all_spacecrafts[2].photo.attach(io: spacecraft_2, filename: "nes.png", content_type: "image/png")
 
-spacecraft_3 = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+spacecraft_3 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999978/spacebnb/spaceships/enterprise_dvguyt.jpg")
 all_spacecrafts[3].photo.attach(io: spacecraft_3, filename: "nes.png", content_type: "image/png")
 
-spacecraft_4 = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+spacecraft_4 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999978/spacebnb/spaceships/nebuchadnezzar_ur9a3x.jpg")
 all_spacecrafts[4].photo.attach(io: spacecraft_4, filename: "nes.png", content_type: "image/png")
 
-spacecraft_5 = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+spacecraft_5 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999978/spacebnb/spaceships/apolo_khr6ra.jpg")
 all_spacecrafts[5].photo.attach(io: spacecraft_5, filename: "nes.png", content_type: "image/png")
 
-spacecraft_6 = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+spacecraft_6 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999969/spacebnb/spaceships/ufo_qzww4g.jpg")
 all_spacecrafts[6].photo.attach(io: spacecraft_6, filename: "nes.png", content_type: "image/png")
 
-spacecraft_7 = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+spacecraft_7 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999978/spacebnb/spaceships/endurance_kernzp.jpg")
 all_spacecrafts[7].photo.attach(io: spacecraft_7, filename: "nes.png", content_type: "image/png")
 
-spacecraft_8 = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+spacecraft_8 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999978/spacebnb/spaceships/discovery_pxbmwc.jpg")
 all_spacecrafts[8].photo.attach(io: spacecraft_8, filename: "nes.png", content_type: "image/png")
 
-spacecraft_9 = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+spacecraft_9 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999979/spacebnb/spaceships/noahsarc_fpcezl.jpg")
 all_spacecrafts[9].photo.attach(io: spacecraft_9, filename: "nes.png", content_type: "image/png")
