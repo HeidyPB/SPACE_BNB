@@ -1,39 +1,41 @@
-<h1><strong>Dashboard</strong></h1>
-
-<div class="container">
+<div class="container dashboard">
+  <h1>Dashboard</h1>
+  <br>
   <div class="row">
 
     <div class="col-6">
       <h2>My Reservations</h2>
-        <% @user_reservations.each do |reservation| %>
-          <p>Reference No: <%= reservation.id %>000BNB </p>
-          <p>Comment: <%= reservation.comment %></p>
-          <p>Status: <%= reservation.reservation_status %></p>
-          <p>Spaceship: <%= reservation.spacecraft.name %> </p>
+          <% @user_reservations.each do |reservation| %>
+          <div class="boite">
+            <p>Reference No: <%= reservation.id %>000BNB </p>
+            <p>Comment: <%= reservation.comment %></p>
+            <p>Status: <%= reservation.reservation_status %></p>
+            <p>Spaceship: <%= reservation.spacecraft.name %> </p>
+          </div>
           <br>
         <% end %>
     </div>
 
     <div class="col-6">
-      <h2>My Posts</h2>
+      <h2>Requests</h2>
       <% @reservations.each do |reservation| %>
         <% if reservation.user_id != @user.id %>
-          <p>Reservation id: <%= reservation.id %></p>
-          <p>Spacecraft: <%= reservation.spacecraft.name %></p>
-          <p>Reservation id: <%= reservation.comment %></p>
-          <p>Reservation status: <%= reservation.reservation_status %></p>
+          <div class="boite my-2 p-2">
+            <p>Reservation id: <%= reservation.id %></p>
+            <p>Spacecraft: <%= reservation.spacecraft.name %></p>
+            <p>Reservation id: <%= reservation.comment %></p>
+            <p>Reservation status: <%= reservation.reservation_status %></p>
 
-          <%= simple_form_for(reservation) do |f| %>
-            <%= f.hidden_field :reservation_status, value: 'accepted' %>
-            <%= f.submit :Accept %>
-          <% end %> <!-- form Accept -->
+            <%= simple_form_for(reservation) do |f| %>
+              <%= f.hidden_field :reservation_status, value: 'accepted' %>
+              <%= f.submit :Accept %>
+            <% end %> <!-- form Accept -->
 
-          <%= simple_form_for(reservation) do |f| %>
-            <%= f.hidden_field :reservation_status, value: 'rejected' %>
-            <%= f.submit :Reject %>
-          <% end %> <!-- form Accept -->
-
-          <br>
+            <%= simple_form_for(reservation) do |f| %>
+              <%= f.hidden_field :reservation_status, value: 'rejected' %>
+              <%= f.submit :Reject %>
+            <% end %> <!-- form Accept -->
+          </div> <!-- boite -->
         <% end %> <!-- if -->
       <% end %> <!-- each -->
     </div>
