@@ -5,6 +5,11 @@ class ReservationPolicy < ApplicationPolicy
     #   scope.all
     # end
   end
+
+  def create?
+    true
+  end
+
   def dashboard?
     return true
   end
