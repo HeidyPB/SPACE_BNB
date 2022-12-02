@@ -188,7 +188,7 @@ user_9 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1670000000
 all_users[9].avatar.attach(io: user_9, filename: "nes.png", content_type: "image/png")
 
 
-spacecraft_0 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999733/spacebnb/spaceships/milenium_namgjn.jpg")
+spacecraft_0 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1670010987/spacebnb/spaceships/mileniun_dcyahm.jpg")
 all_spacecrafts[0].photo.attach(io: spacecraft_0, filename: "nes.png", content_type: "image/png")
 
 spacecraft_1 = URI.open("https://res.cloudinary.com/ddwnnuqij/image/upload/v1669999978/spacebnb/spaceships/x-wing_mfocnh.jpg")
