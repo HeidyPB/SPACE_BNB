@@ -9,7 +9,9 @@
   <div class="card-space-infos">
     <div>
       <%= render "spacecrafts", spacecrafts: @spacecrafts %>
-      <%= link_to "Book now", new_spacecraft_reservation_path(@spacecraft), class: "btn btn-flat" %>
+      <% if @spacecraft.user != current_user %>
+        <%= link_to "Book now", new_spacecraft_reservation_path(@spacecraft), class: "btn btn-flat" %>
+      <% end %>
       <%= link_to 'Return to Spaceships', spacecrafts_path %> |
       <% if policy(@spacecraft).edit? %>
         <%= link_to "edit", edit_spacecraft_path(@spacecraft)%> |

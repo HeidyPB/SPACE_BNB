@@ -3,12 +3,14 @@ class ReservationsController < ApplicationController
 
   def new
     @reservation = Reservation.new
+    authorize @reservation
   end
 
   def create
     @reservation = Reservation.new(reservation_params)
     @reservation.user = current_user
     @reservation.spacecraft = Spacecraft.find(params[:spacecraft_id])
+    authorize @reservation
     if @reservation.save
       redirect_to spacecraft_path(@spacecraft), notice: "Your reservation was successfully."
     else
