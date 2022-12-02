@@ -1,10 +1,13 @@
-<div>
+<br>
+<br>
+<br>
+<div id="simple-form">
   <%= simple_form_for(@spacecraft) do |f| %>
-    <%= f.input :name %>
-    <%= f.input :velocity %>
-    <%= f.input :passenger_capacity %>
-    <%= f.input :price %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit %>
+  <%= f.input :name , input_html: { class:"text-dark"}%>
+  <%= f.input :velocity %>
+  <%= f.input :passenger_capacity %>
+  <%= f.input :price %>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit %>
   <% end %>
 </div>
