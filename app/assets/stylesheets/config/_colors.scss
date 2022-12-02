@@ -10,5 +10,15 @@ $gray: #0E0000;
 $light-gray: #F4F4F4;
 
 body {
-  background-image: url("https://th.bing.com/th/id/OIP.1pK9o20xWEc4MRudtx__9wHaEK?pid=ImgDet&w=474&h=266&rs=1");
+  background-image: url(https://cdn.pixabay.com/photo/2016/09/08/12/00/stars-1654074_960_720.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/29/01/13/background-1866485__340.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
