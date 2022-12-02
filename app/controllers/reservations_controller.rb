@@ -21,12 +21,14 @@ class ReservationsController < ApplicationController
     @user_reservations = @user.reservations
     @user_spacecrafts = @user.spacecrafts
     @reservations = Reservation.all
+    authorize @reservations
     # raise
   end
 
   def update
     @reservation = Reservation.find(params[:id])
     @reservation.update(status_params)
+    authorize @reservation
   end
 
   private
