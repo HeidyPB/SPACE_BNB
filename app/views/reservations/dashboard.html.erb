@@ -4,7 +4,7 @@
   <div class="row">
 
     <div class="col-6">
-      <h2>My Reservations</h2>
+      <h2>My reservations</h2>
           <% @user_reservations.each do |reservation| %>
           <div class="boite">
             <p>Reference No: <%= reservation.id %>000BNB </p>
@@ -17,7 +17,7 @@
     </div>
 
     <div class="col-6">
-      <h2>Requests</h2>
+      <h2>Requests &#40;your spaceship&#41;</h2>
       <% @reservations.each do |reservation| %>
         <% if reservation.user_id != @user.id %>
           <div class="boite my-2 p-2">
