@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672342532/Miscellaneous/Give%20me%20a%20hand%20-%20Readme/home-gmh_tvesvy.png" alt="logo" width="400" height="auto" />
+  <img src="" alt="logo" width="400" height="auto" />
   <h1>Give me a hand</h1>
   
 <!-- Badges -->
@@ -60,12 +60,8 @@ The app allows to create category lists in which favorite movies can be saved.
 
 <div align="center">
 
-<img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672170864/Miscellaneous/Movie-Watch-List/homepage-watchlist_h6eibs.png" alt="logo" width="600" height="auto" />
-  <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672170864/Miscellaneous/Movie-Watch-List/category-watch-list_e2rpa7.jpg" alt="logo" width="600" height="auto" />
-<div align="center">
-  <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672170864/Miscellaneous/Movie-Watch-List/Select-Movie_ucha7m.png" alt="logo" width="400" height="auto" />
-</div>
-  <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672170955/Miscellaneous/Movie-Watch-List/list-watch-list_pqlsxl.png" alt="logo" width="600" height="auto" />
+<img src="" alt="logo" width="600" height="auto" />
+  <img src="" alt="logo" width="600" height="auto" />
   
 </div>
 
@@ -85,19 +81,20 @@ The app allows to create category lists in which favorite movies can be saved.
 <details>
   <summary>Frontkend Development</summary>
   <ul>
-    <li><a href="https://webpack.js.org/">Webpack</a></li>
-    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
     <li><a href="https://www.w3.org/html/">HTML</a></li>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Software & Tools</summary>
+<summary>Software/Tools & Cloud Hosting</summary>
   <ul>
     <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a></li>
     <li><a href="https://git-scm.com/">Git</a></li>
+    <li><a href="https://www.heroku.com/">Heroku</a></li>
   </ul>
 </details>
 
