@@ -1,7 +1,7 @@
 <div align="center">
 
   <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672423084/Miscellaneous/SpaceBnb-Readme/space-home_yfq6pq.jpg" alt="logo" width="600" height="auto" />
-  <h1>Give me a hand</h1>
+  <h1>Space Bnb</h1>
   
 <!-- Badges -->
 <p>
