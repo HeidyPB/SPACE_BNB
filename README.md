@@ -127,7 +127,7 @@ Go to the project directory
 <!-- Usage -->
 ## :eyes: Usage
 
-More specifically this app allows you request a rental for a spacecraft. The user can also post an add for his own spaceshift :
+More specifically this app allows you to request a rental for a spacecraft. The user can also post an add for his own spaceshift :
 <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672423087/Miscellaneous/SpaceBnb-Readme/space-new_zgysyl.png" alt="logo" width="600" height="auto" />
 The user has access to a dashboard where all requested rentals as well as requests for posted spaceships can be seen :
 <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672423087/Miscellaneous/SpaceBnb-Readme/space-dash_xysvxt.png" alt="logo" width="600" height="auto" />
