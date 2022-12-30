@@ -1,38 +1,38 @@
 <div align="center">
 
-  <img src="" alt="logo" width="400" height="auto" />
+  <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672423084/Miscellaneous/SpaceBnb-Readme/space-home_yfq6pq.jpg" alt="logo" width="600" height="auto" />
   <h1>Give me a hand</h1>
   
 <!-- Badges -->
 <p>
-  <a href="https://github.com/Estu0/rails-movie-watch-list/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Estu0/rails-movie-watch-list" alt="contributors" />
+  <a href="https://github.com/HeidyPB/SPACE_BNB/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/HeidyPB/SPACE_BNB" alt="contributors" />
   </a>
   <a href="">
-    <img src="https://img.shields.io/github/last-commit/Estu0/rails-movie-watch-list" alt="last update" />
+    <img src="https://img.shields.io/github/last-commit/HeidyPB/SPACE_BNB" alt="last update" />
   </a>
-  <a href="https://github.com/Estu0/rails-movie-watch-list/network/members">
-    <img src="https://img.shields.io/github/forks/Estu0/rails-movie-watch-list" alt="forks" />
+  <a href="https://github.com/HeidyPB/SPACE_BNB/network/members">
+    <img src="https://img.shields.io/github/forks/HeidyPB/SPACE_BNB" alt="forks" />
   </a>
-  <a href="https://github.com/Estu0/rails-movie-watch-list/stargazers">
-    <img src="https://img.shields.io/github/stars/Estu0/rails-movie-watch-list" alt="stars" />
+  <a href="https://github.com/HeidyPB/SPACE_BNB/stargazers">
+    <img src="https://img.shields.io/github/stars/HeidyPB/SPACE_BNB" alt="stars" />
   </a>
-  <a href="https://github.com/Estu0/rails-movie-watch-list/issues/">
-    <img src="https://img.shields.io/github/issues/Estu0/rails-movie-watch-list" alt="open issues" />
+  <a href="https://github.com/HeidyPB/SPACE_BNB/issues/">
+    <img src="https://img.shields.io/github/issues/HeidyPB/SPACE_BNB" alt="open issues" />
   </a>
-  <a href="https://github.com/Estu0/rails-movie-watch-list/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Estu0/rails-movie-watch-list.svg" alt="license" />
+  <a href="https://github.com/HeidyPB/SPACE_BNB/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/HeidyPB/SPACE_BNB.svg" alt="license" />
   </a>
 </p>
    
 <!-- <h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
+    <a href="https://github.com/HeidyPB/SPACE_BNB/">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
+    <a href="https://github.com/HeidyPB/SPACE_BNB">Documentation</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
+    <a href="https://github.com/HeidyPB/SPACE_BNB/issues/">Report Bug</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
+    <a href="https://github.com/HeidyPB/SPACE_BNB/issues/">Request Feature</a>
   </h4> -->
 </div>
 
@@ -53,15 +53,15 @@
 
 <!-- About the Project -->
 ## :star2: About the Project
-The app allows to create category lists in which favorite movies can be saved.
+The app allows to rent spaceships or post an add for a spaceship.
 
 <!-- Screenshots -->
 ### :camera: Screenshots
 
 <div align="center">
 
-<img src="" alt="logo" width="600" height="auto" />
-  <img src="" alt="logo" width="600" height="auto" />
+  <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672423087/Miscellaneous/SpaceBnb-Readme/space-index_oj15uw.png" alt="logo" width="600" height="auto" />
+  <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672423087/Miscellaneous/SpaceBnb-Readme/space-show_ypw8l3.png" alt="logo" width="600" height="auto" />
   
 </div>
 
@@ -115,7 +115,7 @@ This project uses Yarn as package manager
 Clone the project
 
 ```bash
-  git clone https://github.com/Estu0/rails-movie-watch-list.git
+  git clone https://github.com/HeidyPB/SPACE_BNB.git
 ```
 
 Go to the project directory
@@ -124,30 +124,18 @@ Go to the project directory
   cd my-project
 ```
 
-Install dependencies
-
-```bash
-  yarn install
-```
-
-```bash
-  npm install tom-select
-```
-
-```bash
-  npm i star-rating.js
-```
-
 <!-- Usage -->
 ## :eyes: Usage
 
-This app enables you to create & delete lists of movie categories. Once a list is created movies can be added to it.
-
+More specifically this app allows you request a rental for a spacecraft. The user can also post an add for his own spaceshift :
+<img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672423087/Miscellaneous/SpaceBnb-Readme/space-new_zgysyl.png" alt="logo" width="400" height="auto" />
+The user has access to a dashboard where all requested rentals as well as requests for posted spaceships can be seen :
+<img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672423087/Miscellaneous/SpaceBnb-Readme/space-dash_xysvxt.png" alt="logo" width="600" height="auto" />
 <!-- Contributing -->
 ## :wave: Contributing
 
-<a href="https://github.com/Estu0/rails-movie-watch-list/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Estu0/rails-movie-watch-list" />
+<a href="https://github.com/HeidyPB/SPACE_BNB/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=HeidyPB/SPACE_BNB" />
 </a>
 
 
@@ -164,6 +152,4 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
-
- - [https://developers.themoviedb.org/3](https://tmdb.lewagon.com/movie/top_rated)
- - [LeWagon](https://www.lewagon.com/)
+ - [LeWagon uikit](https://uikit.lewagon.com/)
