@@ -128,7 +128,7 @@ Go to the project directory
 ## :eyes: Usage
 
 <p>
-  More specifically this app allows you to request a rental for a spacecraft. The user can also post an add for his own spaceshift :
+  More specifically this app allows you to request a rental for a spacecraft. The user can also post an add for his own spaceship :
 </p>
 <img src="https://res.cloudinary.com/dwvrcwjwc/image/upload/v1672423087/Miscellaneous/SpaceBnb-Readme/space-new_zgysyl.png" alt="logo" width="600" height="auto" />
 
